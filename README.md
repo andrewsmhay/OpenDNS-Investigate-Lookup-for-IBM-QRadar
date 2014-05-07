@@ -4,27 +4,27 @@ This is a simple [OpenDNS Investigate](http://www.opendns.com/enterprise-securit
 
 ## Installation
 
-1. Clone the repository locally or download the <code>ip_context_menu.xml</code> file.
+1) Clone the repository locally or download the <code>ip_context_menu.xml</code> file.
 
-2. Upload the <code>ip_context_menu.xml</code> file to your QRadar console.
+2) Upload the <code>ip_context_menu.xml</code> file to your QRadar console.
 
 <code>$ **scp ip_context_menu.xml root@*\<QRadar console IP\>*:.**</code>
 
-3. Using SSH, log in to QRadar as the root user:
+3) Using SSH, log in to QRadar as the root user:
 
 <code>$ **ssh root@\<QRadar console IP\>**</code>
 
-4. Back up your existing  <code>ip_context_menu.xml</code> file:
+4) Back up your existing  <code>ip_context_menu.xml</code> file:
 
 <code>$ **mv /opt/qradar/conf/ip_context_menu.xml /opt/qradar/conf/ip_context_menu.xml.orig**</code>
 
-5. Copy your new <code>ip_context_menu.xml</code> file into the configuration directory:
+5) Copy your new <code>ip_context_menu.xml</code> file into the configuration directory:
 
 <code>$ **cp ~/ip_context_menu.xml /opt/qradar/conf/ip_context_menu.xml**</code>
 
-*Note: Copy any previous settings from your original <code>ip_context_menu.xml </code> file into this new file, if required.*
+*Note: Copy any previous settings from your original <code>ip_context_menu.xml</code> file into this new file, if required.*
 
-6. Restart the tomcat service:
+6) Restart the tomcat service:
 
 <code># **service tomcat restart**</code>
 
