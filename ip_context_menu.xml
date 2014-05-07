@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!- This is a configuration file to add custom actions into the IP address right-click menu. -->
+<contextMenu>
+<menuEntry name="OpenDNS Investigate Lookup" url="https://sgraph.opendns.com/ip-view/%IP%" />
+</contextMenu>
